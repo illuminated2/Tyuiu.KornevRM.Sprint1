@@ -7,7 +7,7 @@ namespace Tyuiu.KornevRM.Sprint1.Task2.V23.Lib
     {
         public int ConvertMinutesToSeconds(int value)
         {
-            return value * value;
+            return value * 60;
         }
     }
 }

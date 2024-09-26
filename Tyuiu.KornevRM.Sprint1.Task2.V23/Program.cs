@@ -18,7 +18,7 @@ namespace Tyuiu.KornevRM.Sprint1.Task2.V23
             Console.WriteLine("*РЕЗУЛЬТАТ:                                                           *");
             Console.WriteLine("***********************************************************************");
 
-            Console.WriteLine("Квадрат числа X = " + ds.ConvertMinutesToSeconds(x));
+            Console.WriteLine("Время в секундах = " + ds.ConvertMinutesToSeconds(x));
             Console.ReadLine();
 
         }
