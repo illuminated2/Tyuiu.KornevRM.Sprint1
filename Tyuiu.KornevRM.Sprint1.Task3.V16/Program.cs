@@ -12,19 +12,18 @@ namespace Tyuiu.KornevRM.Sprint1.Task3.V16
             Console.WriteLine("*ИСКХОДНЫЕ ДАННЫЕ:                                                    *");
             Console.WriteLine("***********************************************************************");
 
-            
-           
-            Console.Write("Введите первый корень (x1): ");
-            double x1 = Convert.ToDouble(Console.ReadLine());
 
-            Console.Write("Введите второй корень (x2): ");
+            
+            Console.Write("Enter the first root: ");
+            double x1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter the second root: ");
             double x2 = Convert.ToDouble(Console.ReadLine());
 
-           
-            double b = -(x1 + x2);
-
             
-            Console.WriteLine($"Коэффициент b = {b:F3}");
+            double b = -x1 - x2;
+
+           
+            Console.WriteLine("The coefficient b is: {0:F3}", b);
             Console.ReadKey();
 
         }
