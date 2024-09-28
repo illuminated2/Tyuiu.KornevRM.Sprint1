@@ -8,7 +8,7 @@ namespace Tyuiu.KornevRM.Sprint1.Task3.V16.Lib
 
         public double CoeffOfQuadraticEquation(double a, double b)
         {
-            return a * b;
+            return Math.Round(-(a + b), 3);
         }
     }
 }
