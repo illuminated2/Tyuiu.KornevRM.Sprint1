@@ -7,9 +7,14 @@ namespace Tyuiu.KornevRM.Sprint1.Task6.V9.Lib
     {
         public string MoveLetterToStart(string value)
         {
-            List<char> x = new List<char>((value[value.Length - 1] + value).ToCharArray());
-            x.RemoveAt(value.Length);
-            return new string(x.ToArray());
+            string result = "";
+            foreach (string s in value.Split(" "){
+                List<char> x = new List<char>((s[s.Length - 1] + s).ToCharArray());
+                x.RemoveAt(s.Length);
+                result += " "+new string(x.ToArray());
+            }
+            
+            return result;
         }
     }
 }
