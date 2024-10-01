@@ -9,12 +9,13 @@ namespace Tyuiu.KornevRM.Sprint1.Task6.V9.Lib
         {
             string result = "";
             foreach (string s in value.Split(" ")) {
-                string ss = s[s.Length - 1] + s;
-                ss.Substring(0, ss.Length - 1);
-                result += ss+" ";
+                List<char> xx = new List<char>((s[s.Length - 1] + s).ToCharArray());
+                xx.RemoveAt(s.Length);
+                result += new string(xx.ToArray())+" ";
             }
-            result.Substring(0, result.Length-1);
-            return result;
+            List<char> x = new List<char>(result.ToCharArray());
+            x.RemoveAt(result.Length);
+            return new string(x.ToArray());
         }
     }
 }
