@@ -14,7 +14,7 @@ namespace Tyuiu.KornevRM.Sprint1.Task6.V9.Lib
                 result += new string(xx.ToArray())+" ";
             }
             List<char> x = new List<char>(result.ToCharArray());
-            x.RemoveAt(result.Length);
+            x.RemoveAt(result.Length-1);
             return new string(x.ToArray());
         }
     }
