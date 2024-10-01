@@ -9,11 +9,11 @@ namespace Tyuiu.KornevRM.Sprint1.Task6.V9.Lib
         {
             string result = "";
             foreach (string s in value.Split(" ")) {
-                List<char> x = new List<char>((s[s.Length - 1] + s).ToCharArray());
-                x.RemoveAt(s.Length);
-                result += " "+new string(x.ToArray());
+                string ss = s[s.Length - 1] + s;
+                ss.Substring(0, ss.Length - 1);
+                result += ss+" ";
             }
-            
+            result.Substring(0, result.Length-1);
             return result;
         }
     }
