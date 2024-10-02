@@ -6,7 +6,7 @@ namespace Tyuiu.KornevRM.Sprint1.Task7.V7.Lib
     {
         public double Calculate(double x, double y)
         {
-            double res = Math.Round(((Math.Cos(x) / Math.PI - 2 * Math.Pow(y,x)) + 16 * x * Math.Cos(x*y) - 2),3);
+            double res = Math.Round((Math.Cos(x) / (Math.PI - 2 * Math.Pow(y,x)) + 16 * x * Math.Cos(x*y) - 2),3);
             return res;
         }
     }
