@@ -22,7 +22,7 @@ namespace Tyuiu.KornevRM.Sprint1.Task7.V7
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("*         cosx                                                            *");
-            Console.WriteLine("* z = ------------- + 16cos(xy) - 2                                       *");
+            Console.WriteLine("* z = ------------- + 16x cos(xy) - 2                                     *");
             Console.WriteLine("*       П - 2y^x                                                          *");
             Console.WriteLine("***************************************************************************");
 
